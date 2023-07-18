@@ -1,0 +1,304 @@
+body {
+  color: #333;
+  background-color: #000;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+li {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+img {
+  max-width: none;
+  display: inline-block;
+}
+
+.background-video-mobile {
+  z-index: -1;
+  display: none;
+}
+
+.background-video-desktop {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  filter: contrast(155%);
+  background-color: #000;
+  margin-left: 0;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.navbar {
+  z-index: 5;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.navbar-logo {
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container-header {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+}
+
+.nav-menu {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-link:focus-visible {
+  outline-offset: 0px;
+  border-radius: 4px;
+  outline: 2px solid #0050bd;
+}
+
+.nav-link[data-wf-focus-visible] {
+  outline-offset: 0px;
+  border-radius: 4px;
+  outline: 2px solid #0050bd;
+}
+
+.body {
+  cursor: crosshair;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.footer {
+  z-index: 5;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.footer-social-block {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.footer-social-link {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.image {
+  width: 50%;
+}
+
+.image.center {
+  width: 100%;
+}
+
+.image.center.enter {
+  margin-top: 2%;
+}
+
+.image.center.enterbg {
+  height: 50%;
+  object-fit: contain;
+}
+
+.section {
+  background-color: rgba(0, 0, 0, .64);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.social {
+  width: 4vw;
+}
+
+.social:hover {
+  opacity: .5;
+  transform: translate(0, 5%);
+}
+
+.nav {
+  width: auto;
+  height: 4vh;
+  object-fit: scale-down;
+}
+
+.nav:hover {
+  opacity: .5;
+  transform: translate(0, 5%);
+}
+
+.list-item {
+  width: 22.6%;
+}
+
+.logo {
+  height: 15vh;
+  object-fit: contain;
+}
+
+.site-loader {
+  z-index: 10;
+  background-color: #000;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+@media screen and (max-width: 991px) {
+  .container-header {
+    max-width: 728px;
+  }
+
+  .nav-menu-wrapper {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .nav-link {
+    font-size: 4vw;
+  }
+
+  .image {
+    width: 75%;
+  }
+
+  .social {
+    width: 7vw;
+  }
+
+  .logo {
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  li {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .navbar-logo {
+    max-width: 100%;
+  }
+
+  .nav-link {
+    display: inline-block;
+  }
+
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .social {
+    width: 10vw;
+  }
+
+  .logo {
+    height: 8vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .background-video-mobile {
+    width: 150vw;
+    height: auto;
+    filter: contrast(155%);
+    background-color: #000;
+    margin-left: -25vw;
+    display: block;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .background-video-desktop {
+    display: none;
+  }
+
+  .container-header {
+    max-width: none;
+  }
+
+  .navbar-wrapper {
+    padding-left: 2%;
+    padding-right: 1%;
+  }
+
+  .nav-menu-wrapper {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+  }
+
+  .nav-link {
+    margin-top: 25%;
+  }
+
+  .image {
+    width: 95%;
+  }
+
+  .social {
+    width: 15vw;
+  }
+
+  .nav {
+    height: 3vh;
+  }
+
+  .logo {
+    height: 10vh;
+  }
+}
+
+
