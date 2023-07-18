@@ -124,23 +124,34 @@ img {
 }
 
 .image {
-  width: 50%;
-}
-
-.image.center {
   width: 100%;
+  object-fit: contain;
 }
 
-.image.center.enter {
+.image.loader {
+  width: 100%;
+  object-fit: contain;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.image.loader.enter {
   margin-top: 2%;
 }
 
-.image.center.enterbg {
+.image.loader.enterbg {
   height: 50%;
   object-fit: contain;
 }
 
+.image.home {
+  width: 100%;
+  padding: 20px;
+}
+
 .section {
+  -webkit-backdrop-filter: contrast(200%);
+  backdrop-filter: contrast(200%);
   background-color: rgba(0, 0, 0, .64);
   flex-direction: column;
   justify-content: center;
@@ -154,7 +165,7 @@ img {
 }
 
 .social {
-  width: 4vw;
+  width: 6vw;
 }
 
 .social:hover {
@@ -286,6 +297,11 @@ img {
 
   .image {
     width: 95%;
+  }
+
+  .image.loader {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .social {
