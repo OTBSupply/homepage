@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^$ https://otbsupply.bigcartel.com [L]
